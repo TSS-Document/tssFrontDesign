@@ -39,3 +39,25 @@ state:
        }
      }
 ```
+
+## examInfo
+
+```js
+namespace: 'exam', 
+state: 
+    {
+      exam_list:
+       {
+         1': {
+           title: '软工二考试',
+           description: 'string',
+           startAt: 'yyyy-MM-dd hh:mm:ss', 
+           endAt: 'yyyy-MM-dd hh:mm:ss', 
+           isStarted: 'true',
+           isEnd: 'false',
+           gitInitStatus:'fail'|'success'|'notBegun'|'undergoing',
+           questions: ['1','2','3']         },
+       }
+    }
+
+```
