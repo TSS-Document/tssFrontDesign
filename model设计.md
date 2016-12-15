@@ -61,3 +61,7 @@ state:
     }
 
 ```
+
+## homeworkInfo
+
+>与examInfo保持一致
