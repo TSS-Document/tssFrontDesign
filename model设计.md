@@ -25,8 +25,7 @@ state:
     {
       course_list: 
         { 
-          '1': 
-          {
+          '1': {
            name: '',
            grade: '',
            description: '',
@@ -34,7 +33,7 @@ state:
            exams: ['1','2','3'], 
            homeworks: ['1','2','3']
           },
-         '2':     {} , 
+         '2': {} , 
          '3': {}
        }
      }
@@ -48,7 +47,7 @@ state:
     {
       exam_list:
        {
-         1': {
+         '1': {
            title: '软工二考试',
            description: 'string',
            startAt: 'yyyy-MM-dd hh:mm:ss', 
@@ -65,3 +64,20 @@ state:
 ## homeworkInfo
 
 >与examInfo保持一致
+
+
+## questionInfo 
+
+```js
+namespace: 'question', 
+state: {
+    question_list: { 
+        '1': {
+            title: 'string', 
+            description: 'string',
+            type: '编程题', 
+            //以下三项若为空,则显示为分析中,前端自行判断
+            score: 10, 
+            scoreURL: 'url', 
+            analyzeURL: 'url'          },         '2': {},         '3': {}     }}
+```
