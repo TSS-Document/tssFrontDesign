@@ -12,7 +12,9 @@ state:
        type: 'student'
        avatar: 'image url' 
        gender: 'male'
-       email: 'xxx@xxx.com' 
+       email: 'xxx@xxx.com'
+       gitId: '',
+       number: '141250106', 
        courses: ['1','2','3']
     }
 ```
@@ -73,11 +75,14 @@ namespace: 'question',
 state: {
     question_list: { 
         '1': {
-            title: 'string', 
-            description: 'string',
-            type: '编程题', 
+            question:{
+               id: 123
+               title: 'string', 
+               description: 'string',
+               type: '编程题',
+            } 
             //以下三项若为空,则显示为分析中,前端自行判断
             score: 10, 
-            scoreURL: 'url', 
-            analyzeURL: 'url'          },         '2': {},         '3': {}     }}
+            scoreReportUrl: 'url', 
+            analysisReportUrl: 'url'          },         '2': {},         '3': {}     }}
 ```
